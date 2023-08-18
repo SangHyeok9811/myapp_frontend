@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 20px;
+        color: green;
+        width: 70%;
+        margin: 0 auto;
+        /* display: flex; */
+        /* flex-direction: column; */
+        align-items: center;
+      }
+      h1 {
+        margin: 20px;
+        text-align: center;
+      }
+      .background-div {
+        width: 60vw;
+        background-color: skyblue;
+        /* 중앙정렬 */
+        margin: 30px auto;
+      }
+      .main-div {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .img-nickname-div {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      .nickname-change {
+        border: 1px solid black;
+      }
+      .nickname-change input {
+        width: 20vw;
+        height: 30px;
+      }
+      .nickname-change button {
+        margin-top: 10px;
+        float: right;
+      }
+      .profile-div {
+        border: 1px solid black;
+        text-align: center;
+      }
+      .age-div {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      .email-div {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      .profile-div button {
+        float: right;
+      }
+      .like-post {
+        border: 1px solid black;
+      }
+      .buttons {
+        text-align: center;
+        margin-top: 10px;
+      }
+      #show-mypost {
+        float: right;
+      }
+      footer ul {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+      }
+      footer ul > li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Musicolumn</h1>
+    <hr />
+    <div class="background-div">
+      <div class="main-div">
+        <div class="img-nickname-div">
+          <div>img</div>
+          <div>
+            <div>Nickname</div>
+            <br />
+            <button>이미지 변경</button>
+          </div>
+        </div>
+        <div class="nickname-change">
+          <div>Nickname 변경</div>
+          <input type="text" placeholder="변경할 NickName을 입력하세요" />
+          <br />
+          <button>적용</button>
+        </div>
+        <div class="profile-div">
+          <h3>내 정보</h3>
+          <br />
+          <div class="age-div">
+            <div>나이</div>
+            <input type="text" placeholder="26" />
+          </div>
+          <br />
+          <div class="email-div">
+            <div>e-mail</div>
+            <input type="text" placeholder="naver" />
+          </div>
+          <br />
+          <button>적용</button>
+        </div>
+        <div class="like-post">
+          <div>좋아요 한 게시글</div>
+          <br />
+          <ul>
+            <li>게시글</li>
+            <li>게시글</li>
+            <li>게시글</li>
+            <li>게시글</li>
+            <li>게시글</li>
+          </ul>
+          <div class="buttons">
+            <div>
+              <button><</button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <button>5</button>
+              <button>></button>
+            </div>
+            <br />
+            <div>
+              <button id="show-mypost">작성글 보기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <footer>
+      <br />
+      <ul>
+        <li>관리자)한상혁</li>
+        <li>연락처)010-3800-4350</li>
+        <li>e-mail)hansh7hsh@gmail.com</li>
+        <li>주소)서울시 노원구</li>
+      </ul>
+    </footer>
+  </body>
+</html>

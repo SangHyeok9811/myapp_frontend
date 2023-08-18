@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 20px;
+        color: green;
+        width: 70%;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 20px;
+        text-align: center;
+      }
+      .root-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 수직 가운데 정렬 */
+        align-items: center; /* 수평 가운데 정렬 */
+        height: 80vh; /* 뷰포트 높이 만큼 설정 */
+        margin-top: 40px;
+        background-color: skyblue;
+      }
+      .root-div input {
+        width: 30vw;
+        height: 3vh;
+      }
+      .root-div button {
+        width: 8vw;
+        height: 4vh;
+      }
+      footer ul {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+      }
+      footer ul > li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Musicolumn</h1>
+    <hr />
+    <div class="root-div">
+      <div class="id-div">
+        <p>Id</p>
+        <input type="text" />
+      </div>
+      <div class="password-div">
+        <p>Password</p>
+        <input type="text" />
+      </div>
+      <div class="password-match-div">
+        <p>Password 확인</p>
+        <input type="text" />
+      </div>
+      <div class="nickname-div">
+        <p>NickName</p>
+        <input type="text" />
+      </div>
+      <div class="bithdate-div">
+        <p>생년월일</p>
+        <input type="text" />
+      </div>
+      <div class="email-div">
+        <p>이메일 주소</p>
+        <input type="text" />
+      </div>
+      <div class="email-match-div">
+        <p>이메일 주소 확인</p>
+        <input type="text" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <button>회원가입</button>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <footer>
+      <br />
+      <ul>
+        <li>관리자)한상혁</li>
+        <li>연락처)010-3800-4350</li>
+        <li>e-mail)hansh7hsh@gmail.com</li>
+        <li>주소)서울시 노원구</li>
+      </ul>
+    </footer>
+  </body>
+</html>

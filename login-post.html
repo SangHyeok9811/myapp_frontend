@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: green;
+      }
+      .body-item {
+        font-size: 20px;
+        width: 70%;
+        margin: 0 auto;
+      }
+      .sticky {
+        float: right;
+        border: 1px solid black;
+        margin-right: 40px;
+        text-align: center;
+        padding: 5px;
+        position: sticky;
+        top: 30%;
+        width: 10vw;
+      }
+      .sticky hr {
+        margin-top: 5px;
+      }
+      .profile-box {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+      }
+      h1 {
+        margin: 20px;
+        text-align: center;
+      }
+      .search-bar {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+      .search-bar input {
+        width: 60vw;
+        height: 40px;
+      }
+      .main-div {
+        display: flex;
+        width: 60vw;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+      .sidebar-section {
+        border: 1px solid black;
+        flex-grow: 1;
+      }
+      .sidebar-list {
+        margin-top: 40px;
+        justify-content: space-around;
+      }
+      .sidebar-list li {
+        list-style: none;
+        padding: 20px;
+      }
+      footer ul {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+      }
+      footer ul > li {
+        list-style: none;
+      }
+      .dance-post-section {
+        border: 1px solid black;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 20;
+      }
+      .dance-post-section .dance-post-div > ul {
+        margin: 10px;
+        display: flex;
+        gap: 10px;
+      }
+      .dance-post-section .dance-post-div ul > li {
+        border: 1px solid black;
+        list-style: none;
+      }
+      .button-select-div {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 20px;
+      }
+      .button-div button {
+        height: 30px;
+        width: 30px;
+      }
+      .select-div select {
+        height: 30px;
+        width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Musicolumn</h1>
+    <aside class="sticky">
+      <div>
+        <div class="profile-box">
+          <div>img</div>
+          <div>
+            <div>NickName</div>
+            <button>MyPage</button>
+          </div>
+        </div>
+        <hr />
+        <div class="go-chart-div">
+          <label for="go-chart">음원사이트 바로가기</label>
+          <br />
+          <select name="go-chart-select">
+            <option value="melon">Melon</option>
+            <option value="genie">genie</option>
+            <option value="flO">FLO</option>
+            <option value="bugs">BUGS</option>
+            <option value="youtube-music">Youtube Music</option>
+            <option value="naver-vibe">NAVER VIBE</option>
+          </select>
+        </div>
+        <hr />
+        <div>오늘 방문자 수</div>
+        <hr />
+        <div>top 버튼</div>
+      </div>
+    </aside>
+    <div class="body-item">
+      <hr />
+      <div class="search-bar">
+        <input
+          type="search"
+          name="search"
+          placeholder="가수/노래명으로 검색하세요"
+        />
+      </div>
+      <div class="main-div">
+        <section class="sidebar-section">
+          <ul class="sidebar-list">
+            <strong><li>댄스</li></strong>
+            <li>발라드</li>
+            <li>R&B</li>
+            <li>랩/힙합</li>
+            <li>OST</li>
+            <li>트로트</li>
+            <li>해외POP</li>
+            <li>애니메이션</li>
+            <li>게시글 작성</li>
+          </ul>
+        </section>
+        <section class="dance-post-section">
+          <div class="dance-post-div">
+            <ul>
+              <li>
+                <div>제목</div>
+                <div>작성자</div>
+                <div>좋아요</div>
+                <div>가수</div>
+                <div>노래명</div>
+                <div>작성시간</div>
+                <div>content</div>
+              </li>
+              <br />
+              <li>
+                <div>제목</div>
+                <div>작성자</div>
+                <div>좋아요</div>
+                <div>가수</div>
+                <div>노래명</div>
+                <div>작성시간</div>
+                <div>content</div>
+              </li>
+            </ul>
+          </div>
+          <div class="button-select-div">
+            <div class="button-div">
+              <button><</button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <button>5</button>
+              <button>></button>
+            </div>
+            <div class="select-div">
+              <select name="view-sort">
+                <option value="recent">최신순</option>
+                <option value="like">좋아요순</option>
+              </select>
+            </div>
+          </div>
+        </section>
+      </div>
+      <br />
+      <hr />
+      <footer>
+        <br />
+        <ul>
+          <li>관리자)한상혁</li>
+          <li>연락처)010-3800-4350</li>
+          <li>e-mail)hansh7hsh@gmail.com</li>
+          <li>주소)서울시 노원구</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
