@@ -79,7 +79,7 @@
         /* flex 가로영역 정렬*/
         justify-content: center;
       }
-      .write-section-bundle {
+      .write-form {
         /* margin-left: 50px;
         margin-top: 30px; */
         width: 80%;
@@ -159,7 +159,7 @@
           </ul>
         </section>
         <section class="write-section">
-          <div class="write-section-bundle">
+          <form class="write-form">
             <div>
               <div>제목</div>
               <input type="text" placeholder="제목을 입력하세요" />
@@ -186,19 +186,19 @@
             <div class="select-registration">
               <div>
                 <select name="music-post-genre">
-                  <option value="melon">댄스</option>
-                  <option value="genie">발라드</option>
-                  <option value="flO">R&B</option>
-                  <option value="bugs">랩/힙합</option>
-                  <option value="youtube-music">OST</option>
-                  <option value="naver-vibe">트로트</option>
-                  <option value="naver-vibe">해외팝</option>
-                  <option value="naver-vibe">애니메이션</option>
+                  <option value="dance" selected>댄스</option>
+                  <option value="ballade">발라드</option>
+                  <option value="rnb">R&B</option>
+                  <option value="rap">랩/힙합</option>
+                  <option value="ost">OST</option>
+                  <option value="trot">트로트</option>
+                  <option value="pop">해외팝</option>
+                  <option value="ani">애니메이션</option>
                 </select>
               </div>
               <button>등록</button>
             </div>
-          </div>
+          </form>
         </section>
       </div>
       <br />
@@ -213,5 +213,6 @@
         </ul>
       </footer>
     </div>
+    <script src="write-a-post.js"></script>
   </body>
 </html>
