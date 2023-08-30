@@ -1,16 +1,16 @@
-const postDiv = document.querySelector("#post-div");
+// const postDiv = document.querySelector("#post-div");
 
 (async () => {
-  const form = document.querySelector("form");
-  const title = form.querySelectorAll("input")[0];
-  const content = form.querySelector("textarea");
-  const imageFile = form.querySelectorAll("input")[1];
-  const audioFile = form.querySelectorAll("input")[2];
-  const videoFile = form.querySelectorAll("input")[3];
-  const songName = form.querySelectorAll("input")[4];
-  const singer = form.querySelectorAll("input")[5];
-  const genre = form.querySelector("select");
-  const add = form.querySelector("button");
+  const writeForm = document.querySelector(".write-form");
+  const title = writeForm.querySelectorAll("input")[0];
+  const content = writeForm.querySelector("textarea");
+  const imageFile = writeForm.querySelectorAll("input")[1];
+  const audioFile = writeForm.querySelectorAll("input")[2];
+  const videoFile = writeForm.querySelectorAll("input")[3];
+  const songName = writeForm.querySelectorAll("input")[4];
+  const singer = writeForm.querySelectorAll("input")[5];
+  const genre = writeForm.querySelector("select");
+  const add = writeForm.querySelector("button");
 
   add.addEventListener("click", async (e) => {
     e.preventDefault();
@@ -81,7 +81,7 @@ const postDiv = document.querySelector("#post-div");
       const result = await response.json();
       console.log(result);
 
-      form.reset();
+      writeForm.reset();
     }
 
     sendData();

@@ -47,7 +47,11 @@
         margin-top: 40px;
       }
       .search-bar input {
-        width: 60vw;
+        width: 55vw;
+        height: 40px;
+      }
+      .search-bar button {
+        width: 5vw;
         height: 40px;
       }
       .main-div {
@@ -137,13 +141,14 @@
     </aside>
     <div class="body-item">
       <hr />
-      <div class="search-bar">
+      <form class="search-bar">
         <input
           type="search"
           name="search"
           placeholder="가수/노래명으로 검색하세요"
         />
-      </div>
+        <button>검색</button>
+      </form>
       <div class="main-div">
         <section class="sidebar-section">
           <ul class="sidebar-list">
@@ -214,5 +219,6 @@
       </footer>
     </div>
     <script src="write-a-post.js"></script>
+    <script src="search.js"></script>
   </body>
 </html>
