@@ -10,80 +10,6 @@
         padding: 0;
         box-sizing: border-box;
       }
-      body {
-        font-size: 20px;
-        color: green;
-        width: 70%;
-        margin: 0 auto;
-      }
-      h1 {
-        margin: 20px;
-        text-align: center;
-      }
-      .music-genre {
-        width: 60vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 20px;
-      }
-      .music-genre li {
-        list-style: none;
-      }
-      .search-bar {
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        /* margin: 0 auto; */
-        margin-top: 40px;
-      }
-      .search-bar input {
-        width: 60vw;
-        height: 40px;
-      }
-      .main-view-div {
-        width: 60vw;
-        display: flex;
-        /* justify-content: space-around; */
-        margin: 0 auto;
-        margin-top: 40px;
-        /* align-items: baseline; */
-      }
-      .chart-loginbox-div {
-        display: flex;
-        justify-content: space-around;
-        border: 1px solid black;
-        /* position: relative; */
-      }
-      .go-chart-div {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-      .left-section {
-        border: 1px solid black;
-        flex-grow: 5;
-        padding: 30px;
-      }
-      .right-section {
-        flex-grow: 2;
-        margin-left: 100px;
-      }
-      .left-section ul > li {
-        list-style: none;
-        margin: 20px;
-      }
-      .button-visitcount-div {
-        display: flex;
-        margin-top: 20px;
-      }
-      .button-visitcount-div button {
-        border-radius: 10px;
-      }
-      .main-song-post-div {
-        margin-top: 20px;
-        border: 1px solid black;
-      }
       footer ul {
         font-size: 12px;
         display: flex;
@@ -95,84 +21,12 @@
     </style>
   </head>
   <body>
-    <h1>Musicolumn</h1>
-    <hr />
-    <ul class="music-genre">
-      <li>댄스</li>
-      <li>발라드</li>
-      <li>R&B</li>
-      <li>랩/힙합</li>
-      <li>OST</li>
-      <li>트로트</li>
-      <li>해외POP</li>
-      <li>애니메이션</li>
-    </ul>
-    <div class="search-bar">
-      <input
-        type="search"
-        name="search"
-        placeholder="가수/노래명으로 검색하세요"
-      />
+    <div>
+      <h1>Musicolumn</h1>
     </div>
-    <div class="main-view-div">
-      <section class="left-section">
-        <h2>커뮤니티</h2>
-        <br />
-        <h3>커뮤티니 인기글 top10</h3>
-        <ul>
-          <li>게시글1</li>
-          <li>게시글2</li>
-          <li>게시글3</li>
-          <li>게시글4</li>
-          <li>게시글5</li>
-          <li>게시글6</li>
-          <li>게시글7</li>
-          <li>게시글8</li>
-          <li>게시글9</li>
-          <li>게시글10</li>
-        </ul>
-      </section>
-      <section class="right-section">
-        <div class="chart-loginbox-div">
-          <div class="go-chart-div">
-            <label for="go-chart">음원사이트 바로가기</label>
-            <select name="go-chart-select">
-              <option value="melon">Melon</option>
-              <option value="genie">genie</option>
-              <option value="flO">FLO</option>
-              <option value="bugs">BUGS</option>
-              <option value="youtube-music">Youtube Music</option>
-              <option value="naver-vibe">NAVER VIBE</option>
-            </select>
-          </div>
-          <div class="login-box">
-            <button>회원가입</button>
-            <br />
-            <button>로그인</button>
-          </div>
-          <br />
-        </div>
-        <div class="button-visitcount-div">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>7</button>
-          <button>8</button>
-          <p>오늘 방문자수</p>
-        </div>
-        <div class="main-song-post-div">
-          <h3>장르</h3>
-          <p>장르별 최신글</p>
-          <p>내용</p>
-          <p>노래명/가수</p>
-        </div>
-      </section>
-    </div>
-    <br />
     <hr />
+    <div><button>로그인</button></div>
+    <div><button>회원가입</button></div>
     <footer>
       <br />
       <ul>

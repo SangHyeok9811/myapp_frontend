@@ -20,7 +20,7 @@
         margin: 20px;
         text-align: center;
       }
-      .root-div {
+      .root-form {
         display: flex;
         flex-direction: column;
         justify-content: center; /* 수직 가운데 정렬 */
@@ -29,11 +29,11 @@
         margin-top: 40px;
         background-color: skyblue;
       }
-      .root-div input {
+      .root-form input {
         width: 30vw;
         height: 3vh;
       }
-      .root-div button {
+      .root-form button {
         width: 8vw;
         height: 4vh;
       }
@@ -50,41 +50,61 @@
   <body>
     <h1>Musicolumn</h1>
     <hr />
-    <div class="root-div">
+    <form class="root-form">
       <div class="id-div">
         <p>Id</p>
-        <input type="text" />
+        <input type="text" name="Id" placeholder="Id를 입력하세요" />
       </div>
       <div class="password-div">
         <p>Password</p>
-        <input type="text" />
+        <input
+          type="password"
+          name="Password"
+          placeholder="Password를 입력하세요"
+        />
       </div>
       <div class="password-match-div">
         <p>Password 확인</p>
-        <input type="text" />
+        <input
+          type="password"
+          name="Password 확인"
+          placeholder="password를 다시 입력하세요"
+        />
       </div>
       <div class="nickname-div">
         <p>NickName</p>
-        <input type="text" />
+        <input
+          type="text"
+          name="NickName"
+          placeholder="NickName을 입력하세요"
+        />
       </div>
       <div class="bithdate-div">
         <p>생년월일</p>
-        <input type="text" />
+        <input type="text" name="생년월일" placeholder="예시: yyyy-MM-dd" />
       </div>
       <div class="email-div">
         <p>이메일 주소</p>
-        <input type="text" />
+        <input
+          type="text"
+          name="이메일 주소"
+          placeholder="예시: hansh7hsh@gmail.com"
+        />
       </div>
       <div class="email-match-div">
         <p>이메일 주소 확인</p>
-        <input type="text" />
+        <input
+          type="text"
+          name="이메일 주소 확인"
+          placeholder="이메일을 다시 입력하세요"
+        />
       </div>
       <br />
       <br />
       <div>
         <button>회원가입</button>
       </div>
-    </div>
+    </form>
     <br />
     <hr />
     <footer>
@@ -96,5 +116,6 @@
         <li>주소)서울시 노원구</li>
       </ul>
     </footer>
+    <script src="signup.js"></script>
   </body>
 </html>
